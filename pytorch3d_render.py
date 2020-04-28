@@ -18,7 +18,7 @@ from pytorch3d.renderer.cameras import SfMPerspectiveCameras, SfMOrthographicCam
 device = torch.device("cuda:0")
 torch.cuda.set_device(device)
 
-obj_filename = 'ra_data/out.obj'
+obj_filename = 'out.obj'
 
 # Load obj file
 mesh = load_objs_as_meshes([obj_filename], device=device)
